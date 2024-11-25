@@ -49,7 +49,7 @@ def perror(m):
         >>> perror("Error")
         Error
     """
-    import PySimpleGUI as psg
+    import FreeSimpleGUI as psg
     psg.cprint(m, colors='red')
 
 
@@ -65,7 +65,7 @@ def psuccess(m):
         >>> psuccess("Success")
         Success
     """
-    import PySimpleGUI as psg
+    import FreeSimpleGUI as psg
     psg.cprint(m, colors='green3')
 
 
@@ -81,7 +81,7 @@ def pwarning(m):
         >>> pwarning("Warning")
         Warning
     """
-    import PySimpleGUI as psg
+    import FreeSimpleGUI as psg
     psg.cprint(m, colors='orange')
 
 

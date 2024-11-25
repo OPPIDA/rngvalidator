@@ -1,4 +1,4 @@
-import PySimpleGUI as psg
+import FreeSimpleGUI as psg
 
 
 def horizontalCenter(list):

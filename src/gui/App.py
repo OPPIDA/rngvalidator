@@ -3,7 +3,7 @@
 # Author : Florian Picca <florian.picca@oppida.fr>
 # Date : September 2022
 
-import PySimpleGUI as psg
+import FreeSimpleGUI as psg
 from .windows.mainWindow import mainWindow
 
 psg.theme("LightGrey1")
