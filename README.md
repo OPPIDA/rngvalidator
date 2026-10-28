@@ -7,7 +7,8 @@ This script aims to verify the quality of random number generators. Statistical 
 The following python modules are needed.
 
 ```
-sudo python3 -m pip install freesimplegui mpmath scipy numpy
+sudo apt install python3-tk
+python3 -m pip install freesimplegui mpmath scipy numpy
 ```
 
 ## Usage
