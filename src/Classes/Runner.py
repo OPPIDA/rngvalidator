@@ -126,6 +126,21 @@ class Runner:
 
     def runNISTTests(self, window):
         """
-        TODO
+        Run each NIST test
         """
-        print("NIST test procedures TODO")
+        print("NIST test procedure : run every test one by one")
+
+        nist_tests_list = nistTests.TEST_FUNC.keys()
+
+
+        pbar = window.window["-pbar-"]
+        pbar2 = window.window["-pbar2-"]
+        count = 0
+        pbar.update(max=len(nist_tests_list), current_count=count, visible=True)
+        pbar2.update(visible=True)
+
+        for test in nist_tests_list:
+            self.singleNISTTest(test)
+            count += 1
+            pbar.update(count)
+            window.window.refresh()

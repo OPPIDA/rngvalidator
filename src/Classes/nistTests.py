@@ -765,4 +765,4 @@ MIN_LENGTHS = {
 # Procedures
 # -------------
 
-# NIST does not define procedures, maybe just run all the tests ?
+# NIST does not define procedures, we just run all the tests

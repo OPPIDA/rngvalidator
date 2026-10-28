@@ -98,7 +98,7 @@ def berlekamp_massey(data):
     import numpy as np
 
     n = len(data)
-    c_x, b_x = np.zeros(n, dtype=np.int), np.zeros(n, dtype=np.int)
+    c_x, b_x = np.zeros(n, dtype=int), np.zeros(n, dtype=int)
     c_x[0], b_x[0] = 1, 1
     l, m, i = 0, -1, 0
     while i < n:
@@ -108,7 +108,7 @@ def berlekamp_massey(data):
         delta = (data[i] + np.dot(v, cc)) % 2
         if delta == 1:
             temp = c_x[:]
-            p = np.zeros(n, dtype=np.int)
+            p = np.zeros(n, dtype=int)
             for j in range(0, l):
                 if b_x[j] == 1:
                     p[j + i - m] = 1

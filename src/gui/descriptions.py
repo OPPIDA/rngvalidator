@@ -78,10 +78,10 @@ Random data will automatically be read by the program."""
     "Type": {
         TEST_TYPES.BSI: """Tests defined by the BSI.
 See the README for references to the official description of the tests and procedures.
-At least 5140000 bits are needed to run the procedures.""",
+At least 5,140,000 bits are needed to run the procedures.""",
         TEST_TYPES.NIST: """Tests defined by the NIST.
 See the README for references to the official description of the tests and procedures.
-At least XXX bits are needed to run the procedures."""
+At least 1,000,000 bits are needed to run the procedures."""
     },
     "Parser": {
         PARSERS.Raw: """Raw data format.
